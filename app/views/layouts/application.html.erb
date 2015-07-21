@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sayowl</title>
+  <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= csrf_meta_tags %>
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="http://cdnjs.cloudflare.com/ajax/libs/animate.css/3.3.0/animate.min.css"> 
+  <link href='http://fonts.googleapis.com/css?family=Old+Standard+TT' rel='stylesheet' type='text/css'>  
+  <link href='https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.0/css/materialize.css ' rel='stylesheet' type='text/css'>  
+</head>
+<body>
+  <div id="wrap">
+	<nav class="z-depth-2">
+    <div class="nav-wrapper">
+      <a href="/" class="brand-logo left "><img src="/assets/logo.gif"></a>
+        
+      <ul  id="nav-mobile" class="naver">
+        <li class='col s12'><%=link_to 'home', root_path, method: :get%></li>
+        <li class='col s12'><%=link_to 'keep the party going!', new_home_path, method: :get%></li>
+        <li class='col s12'><%=link_to 'late night munchies', new_find_path, method: :get%></li>
+     </ul>
+     
+    </div>
+  </nav>
+ <!-- <img src="/assets/stripped.gif" class="z-depth-1" id="stripe1">
+  <img src="/assets/stripped.gif" class="z-depth-1" id="stripe2">
+ -->
+<%= yield %>
+
+</body>
+</html>
+
+

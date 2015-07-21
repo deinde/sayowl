@@ -1,0 +1,21 @@
+
+<div class='heading'>
+<div id='welcome-box' >
+	<h1>LATE NIGHT MUNCHIE!</h1>
+ </div>
+</div>
+  
+
+
+
+<%= form_tag (finds_path) do %>
+ 
+ 
+  <%=radio_button_tag  :search,'', :id=>'button'%>
+ 
+  <%= label_tag nil, nil, placeholder:'zip or address' %>
+	  <%= text_field_tag :location,nil, placeholder: 'ENTER ADDRESS OR ZIPCODE' %>
+ 
+  <%= submit_tag "Search"%>
+<% end %>
+</div>

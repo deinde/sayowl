@@ -1,0 +1,14 @@
+
+
+  
+
+<div class='heading'>
+<div id='welcome-box' >
+	<h1>KEEP THE PARTY GOING!</h1>
+</div>
+</div>
+<%= form_tag (home_index_path) do %>
+ <%=radio_button_tag  :search,'', :id=>'button'%>
+ <%= text_field_tag :location,nil, placeholder: 'ENTER ADDRESS OR ZIPCODE' %>
+ <%= submit_tag "Search"%>
+<% end %>

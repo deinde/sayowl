@@ -1,0 +1,552 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any styles
+ * defined in the other CSS/SCSS files in this directory. It is generally better to create a new
+ * file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+@import 'materialize';
+
+@import 'materialize';
+ $primary-color: color("materialize-red", "lighten-2") !default;
+
+html {
+    font-family: 'Old Standard TT', serif!important;
+   }
+
+/*body{
+  background-image:url('/assets/tini.jpg');
+  background-repeat: no-repeat;
+  background-position: 53% 350px;
+  z-index: -10!important;
+}*/
+#wrap{
+  background-image:url('/assets/sayowl.gif');
+  background-repeat: no-repeat;
+  background-position: 53% 350px;
+
+}
+nav{
+  background-image: url('/assets/sayowl.svg') ;
+  background-color: #fff!important;
+  background-repeat: no-repeat!important;
+  background-position: right center; 
+  height: 250px !important;
+  background-color: #fff;
+  color:black;
+
+
+}
+
+a {
+  text-decoration: none;
+  color: #000!important;
+}
+
+img#stripe1 {
+  display: inline-block;
+}
+img#stripe2 {
+  float:right;
+}
+a.brand-logo.left {
+  font-family: Old Standard TT;
+  text-transform: uppercase;
+  font-size: 5em;
+  padding-top:5%!important: 
+}
+
+ nav .brand-logo {
+    position: absolute;
+    color: #fff;
+    display: inline-block;
+    font-size: 2.1rem;
+    padding-top: 1%!important;
+    margin-left: 10px;
+  }
+
+@media only screen and (max-width: 992px)
+nav .brand-logo {
+  left: 24%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+@media screen and (max-width: 960px) {
+  nav { background: none; }
+}
+
+form {
+
+  background-color: #26a69a;
+  border-radius: 10px;
+  width: 55%;
+  margin-left: 22%;
+  height: 10%;
+  top: 100%;
+  bottom: 50%;
+
+}
+
+input#location {
+    background-color: yellow;
+    width: 80%;
+    padding-top: 63px;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 7%;
+}
+.response {
+
+
+  /* margin-left: 25%; */
+  /* display: inline; */
+  width: 100%;
+ /* border: 4px solid green;*/
+  padding-left: 10%;
+}
+
+
+/*#pic-uniform {
+  width: 100%;
+  height: 400px;
+  background-repeat: none;
+  background-size: cover;
+  background-position: 50% 50%;
+  border-radius:29px;
+  margin:0 auto;
+}
+
+#pic-container {
+  width: 40%;
+  height: auto;
+  margin: 0 auto;
+  text-align:center
+
+}
+
+
+div#pic-container {
+  background-color:#e25041;
+ /* padding: 50px;*/
+  /*width: 40%;
+  border-radius: 42px;
+  float:left;
+}*/
+
+
+
+/*#pic-container img{
+  margin-left:auto;
+  margin-right:auto;
+
+}*/
+
+.response a {
+  font-family: Old Standard TT;
+  font-size: 308%;
+  text-transform: uppercase;
+}
+
+
+div#ratings {
+  font-family: Old Standard TT;
+  font-size: 250%;
+  float: right;
+  margin-right: 20%;
+  margin-top: -6%;
+}
+div#address {
+  font-family: Old Standard TT;
+  font-size: 180%;
+  line-height: 2px;
+}
+div#city {
+  font-family: Old Standard TT;
+  font-size: 170%;
+  line-height: 65px;
+}
+div#state {
+  font-family: old standard tt;
+  font-size: 160%;
+  line-height: 3px;
+}
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article, aside, details, figcaption, figure, footer, header, hgroup, main, menu, nav, section, summary {
+  display: block; }
+
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio, canvas, progress, video {
+position: fixed!important;
+top: 50%!important;
+left: 50%!important;
+min-width: 100%!important;
+min-height: 100%!important;
+width: auto!important;
+height: auto!important;
+z-index: -100!important;
+-webkit-transform: translateX(-50%) translateY(-50%)!important;
+transform: translateX(-50%) translateY(-50%);
+background-size: cover!important;
+ 
+ }
+
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+position: fixed!important;
+top: 50%!important;
+left: 50%!important;
+min-width: 100%!important;
+min-height: 100%!important;
+width: auto!important;
+height: auto!important;
+z-index: -100!important;
+-webkit-transform: translateX(-50%) translateY(-50%)!important;
+transform: translateX(-50%) translateY(-50%);
+background-size: cover!important;
+
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */}
+
+/* Links
+   ========================================================================== */
+
+  /////////////video////////////////////
+video#bgvid {
+position: fixed!important;
+top: 50%!important;
+left: 50%!important;
+min-width: 100%!important;
+min-height: 100%!important;
+width: auto!important;
+height: auto!important;
+z-index: -100!important;
+-webkit-transform: translateX(-50%) translateY(-50%)!important;
+transform: translateX(-50%) translateY(-50%);
+background-size: cover!important;
+}
+
+/*nav img{
+  width:80%;
+  padding-top:10%;
+}
+
+div#sleep {
+  width: 50%;
+  background-color: gray;
+  border-radius: 10px;
+  paddng: 10px;
+  height: 83px;
+  margin: 0 auto;
+  text-align: center;
+  padding-top: 2%;
+  font-size: 2em;
+  font-family: Old standard tt;
+  text-shadow: 0px 0px;
+  box-shadow: 4px 2px 0px green;
+  margin-top: 40px;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+.waves-effect.waves-light.btn-large.center {
+  margin-left: 25%;
+  width: 50%;
+  height: 81px;
+  font-family: old standard tt;
+  font-size: 2.5em;
+  line-height: 1;
+  padding-top: 10px;
+}
+
+div#welcome-box {
+  margin-top: -2442px;
+  /* width: 80%; */
+  /* margin: 0 auto; */
+  margin-left: 19%;
+}
+
+
+
+#welcome-box h1{
+  
+  font-size: 4.2rem;
+  line-height: 110%;
+  margin: 2.1rem 0 1.68rem 0;
+  color: #fff;
+  text-transform: uppercase;
+  font-family: old standard;
+  text-align: center;
+  color:#fff;
+
+}
+input#location {
+  background-color: #fff!important;
+}
+
+
+h1#message {
+  color: #fff;
+  margin-top: -2536px;
+  float: left;
+  line-height: 3em;
+  margin-left: 22%;
+}
+
+
+
+input#location {
+  height: 0px;
+  text-align: center;
+  padding-top: 50px;
+  padding-bottom:40px
+}
+
+form {
+  height: 10%;
+  margin-top: -2417px;
+}
+
+form input#location {
+  
+  margin-bottom: 10px;
+  width: 94%;
+  margin-left: 3%;
+  color: #939597;
+
+}
+
+input[type="submit"] {
+  margin-left: 41%;
+  width: 100px;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  color:#939597;
+}*/
+#h1 {
+  /*font-size: 3.2rem;
+  font-family: old standard;
+
+
+  text-shadow: 3px 3px 5px gray;
+  top: 51%;
+  bottom: 50%;
+
+  color: #fff;
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 3.2rem;
+  line-height: 223%;
+
+  margin: 2.1rem 0 1.68rem 0;*/
+}
+
+
+
+
+h1#h1 {
+  color: white;
+  position: absolute;
+  top: 46%;
+}
+{
+  float: left;
+  margin-right: 50%;
+}
+
+
+
+
+
+
+#wrap {
+
+  height: auto;
+  -moz-border-image: url('/assets/stripped.gif') 0 0 0 50 repeat;
+  border-image: url('/assets/stripped.gif') 0 50 70 repeat;
+  border-width: 65px;
+  border-top: 0px;
+}
+
+
+form {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  top: 100px;
+  position: relative;
+}
+
+
+div#welcome-box {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+}
+
+div#welcome-box2 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  color:#000000;
+  text-align: center;
+  font-family: old standard;
+  margin-bottom: 74;
+  margin-top: 69px;
+
+}
+.waves-effect.waves-light.btn-large {
+  margin-right: 44px;
+}
+
+
+
+
+
+
+
+.button-box {
+  /* margin: 0 auto; */
+  text-align: center;
+  padding-bottom: 400px;
+}
+
+
+#welcome-box h1 {
+    color:#fff;
+    text-align:center;
+    font-family:old standard;
+}
+
+form {
+  display: block;
+  width: 50%;
+  margin: 0 auto;
+  border-radius: 10px;
+  top: 0px;
+  position: relative;
+}
+
+
+
+.response a {
+    font-size:2.em;
+    padding-right:200px;
+}
+
+
+
+.button-box {
+  /* margin: 0 auto; */
+  text-align: center;
+  padding-bottom: 400px;
+  padding-top: 74px;
+}
+
+img.tini {
+  transform: rotate(120deg);
+  width: 30%;
+   background-repeat: no-repeat; 
+  z-index: -5;
+  float: left;
+  position: absolute;
+  top: 116px;
+  left: -61px;
+}
+
+
+
+
+div#welcome-box2 {
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  color: #000000;
+  text-align: center;
+  font-family: old standard;
+  margin-bottom: 74;
+  margin-top: 150px;
+}
+
+img.food {
+  transform: rotate(432deg);
+  transform: scalex(-1);
+  width: 44%;
+  /* background-repeat: no-repeat; */
+  z-index: -5;
+  float: left;
+  position: absolute;
+  top: 52px;
+  left: -48px;
+}
+
+ul#nav-mobile {
+  text-align: background:red;
+  /* background-color: red; */
+  color: yellow;
+  position: absolute;
+  bottom: 0;
+  left: 33%;
+  padding-top: 26px;
+}
+ul#nav-mobile {
+  position: relative;
+  top: 180px;
+}
+
+ul a {
+  text-transform: uppercase;
+  font-family: old standard;
+  font-size: 10px;
+}
+
+input[type="submit"] {
+  margin-left: 35%;
+  width: 100px;
+  padding-bottom: 8px;
+  margin-bottom: 18px;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #939597;
+}
+
+ul#nav-mobile {
+  position: relative;
+  top: 180px;
+  /* margin: 0 auto; */
+  /* width: 500px; */
+  float: left;
+  margin-left: -94px;
+}

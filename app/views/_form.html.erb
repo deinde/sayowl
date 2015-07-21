@@ -1,0 +1,11 @@
+
+<%=link_to 'finds new',new_find_path, method: :get%>
+	<%= form_tag home_index_path, class:"formz", method: :get do  %>
+		<div id="formhead">Enter zip code or city to find restaraunts near you</div>
+			<li><%= radio_button_tag :search, '', type: 'radio', :id => "button"  %>
+				</li>
+				<li><%= text_field_tag :location, nil,  placeholder: "zip code or city or address", class: "address", required: true %>
+			</li>
+		</br>
+	<li><%= submit_tag "Search", :id => "submit", :name => nil %></li>
+<% end %>

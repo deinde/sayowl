@@ -1,0 +1,43 @@
+               <div class='heading'>
+                <div id='welcome-box2' >
+                  <h1>LATE NIGHT MUNCHIES</h1>
+                   <img class='food'src='/assets/food-image.png'>
+                </div>
+              </div>
+              
+              <div class='response'>
+                <% if @response and @response.businesses.any? %>
+                <!-- Slides Container -->
+                <% @response.businesses.each do |business| %>
+                <div id="pic-container"><!--the beginning of the erb image positioning div-->
+                  <div id="pic-uniform" class="z-depth-2" 
+                  style=" 
+                  background-image: url('<%= image_url(business) %>');">
+                </div>
+                <br>
+                <%= link_to business.name, business.url, target: '_blank'%>
+                <br>
+
+                <% business_hash = {name: business.name, image: image_url(business), rating_image: business.rating_img_url, yelp_id: business.id, review_count: business.review_count, business_url: business.url } %>
+
+
+                <% if business.keys.include? "phone" %>
+                <% business_hash.merge(phone_number: business.phone)  %>
+                <% business_hash.merge(rating_image: business.rating_img_url)  %>
+                <div id="ratings"><%=  business.rating %></div>
+                <br>
+                <div id="address"><%=  business.location.display_address[0] %></div>
+                <div id="city"><%=  business.location.city  %>,</div>
+                <div id="state"><%=  business.location.state_code  %></div>
+                <% end %>
+                <% if business.keys.include? "phone" %>
+                <% link_to image_tag( business.rating_img_url)%>
+                <% end %>
+              </div>
+              <br>
+              <br>
+              <% end %>
+              <% end %>
+            </div>
+
+            
