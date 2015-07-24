@@ -1,1 +1,2 @@
 # sayowl
+<p><b>Say Owl!</b> is a an application that I bulit using the Ruby on Rails framework that uses the yelp api to help user learn about bars and restaurants near them. This is my first quick interation. The second one will incorporate the Foursquare api and omni-auth so I will be able to get more detailed responses on bar and restaurant closing times.This app was built using Google Materialize, Sass, Ruby, Ruby on Rails,HTML5, and the Yelp api </p>
